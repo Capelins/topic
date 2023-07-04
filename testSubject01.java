@@ -37,30 +37,7 @@ public class testSubject01 {
         }
         return sb.toString();
     }
-
-
-    private static StringBuilder dele(String str1) {
-        String s1 = str1.toUpperCase();
-        int i=0,j=1;
-        ArrayList<Object> arrayList = new ArrayList<Object>();
-        for(int k=0;k<s1.length();k++) {
-            arrayList.add(s1.charAt(k));
-        }
-        System.out.println(arrayList.toString());
-        while(i<j&&i<arrayList.size()&&j<arrayList.size()) {
-            if(arrayList.get(i).equals(arrayList.get(j))) {
-                arrayList.remove(j);
-            }else {
-                i++;
-                j++;
-            }
-        }
-        StringBuilder stringBuilder = new StringBuilder();
-        for(Object character:arrayList) {
-            stringBuilder.append(character);
-        }
-        return stringBuilder;
-    }
+   
 }
 
 
